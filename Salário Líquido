@@ -1,0 +1,29 @@
+print("Salário")
+
+nome = input("Qual o seu nome?: ")
+dias_mes = 20
+horas_dia = int(input("Quantas horas por dia você trabalha?: "))
+salario_hora = float(input("Qual seu salário por hora?: "))
+salario_bruto = (salario_hora * horas_dia) * dias_mes
+
+imposto_renda = salario_bruto * 0.11
+
+inss = salario_bruto * 0.8
+inss_calculo = salario_bruto - inss
+
+sindicato = salario_bruto * 0.5
+sindicato_calculo = salario_bruto - sindicato
+
+desconto_total = imposto_renda + inss_calculo + sindicato_calculo
+salario_liq = salario_bruto - desconto_total
+
+
+print("\n")
+
+print(nome)
+print("+ Salário Bruto : R$", salario_bruto)
+print("- IR (11%) : R$", imposto_renda)
+print("- INSS (8%) : R$", inss_calculo)
+print("- Sindicato (5%) : R$", sindicato_calculo)
+print("\n")
+print("= Salário Liquido : R$", salario_liq)
