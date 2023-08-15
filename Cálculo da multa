@@ -1,0 +1,18 @@
+print("Cálculo da multa")
+
+limite = 50
+
+peso = float(input("Insira o peso do peixe: "))
+
+
+if(peso > limite):
+    print("O peixe pesa {} kilos".format(peso))
+    print("Excedeu o peso limite!\n")
+    dif = peso - limite
+    print("A diferença foi de: {} kg\n".format(dif))
+    multa = dif * 4
+    print("O valor da multa é de R$ {}".format(multa))
+    
+else:
+    print("O peixe pesa {} kilos".format(peso))
+    print("Peso dentro do limite!")
