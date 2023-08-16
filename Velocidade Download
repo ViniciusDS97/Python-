@@ -1,0 +1,12 @@
+print("Velocidade de download")
+
+arquivo = int(input("Informe o tamanho do arquivo: "))
+velocidade = int(input("Informe a velocidade de download: "))
+
+print("O tamanho do arquivo é de {} MB".format(arquivo))
+print("A velocidade de download é de {} Mbps".format(velocidade))
+
+minutos = (arquivo / velocidade) / 8
+minuto = float(minutos)
+
+print("O tempo estimado de download é de {} minutos".format(minuto))
