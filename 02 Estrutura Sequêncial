@@ -1,0 +1,41 @@
+print("Estrutura Sequencial 02")
+
+lata_litros = 18
+lata_preco = 80
+galao_litro = 3.6
+galao_preco = 25
+tinta_metro = 6
+metro_lata = lata_litros / tinta_metro
+metro_galao = galao_litro / tinta_metro
+
+metro_quadrado = float(input("Quantos metros quadrados serão pintados?: "))
+
+print("\n)")
+
+latas_totais = metro_quadrado / metro_lata
+total_latas = int(latas_totais)
+preco_latas = total_latas * lata_preco
+
+galao_totais = metro_quadrado / metro_galao
+total_galao = int(galao_totais)
+preco_galao = total_galao * galao_preco
+
+ambos_totais = metro_quadrado / (metro_lata + metro_galao)
+total_ambos = int(ambos_totais)
+preco_ambos = (total_latas * lata_preco) + (total_galao * galao_preco)
+
+print("Usando apenas latas")
+print("O total de latas compradas será: ", total_latas)
+print("O valor total gasto será de: R$", preco_latas)
+
+print("\n")
+
+print("Usando apenas galões")
+print("O total de galões compradas será: ", total_galao)
+print("O valor total gasto será de: R$", preco_galao)
+
+print("\n")
+
+print("Usando ambos")
+print("O total de latas e galões compradas será: ", total_ambos)
+print("O valor total gasto será de: R$", preco_ambos)
