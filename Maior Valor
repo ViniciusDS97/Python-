@@ -1,0 +1,15 @@
+print("Maior valor")
+
+primeiro_numero = input("Insira o primeiro número: ")
+segundo_numero = input("Insira o segundo número: ")
+num_a = int(primeiro_numero)
+num_b = int(segundo_numero)
+
+if(num_a > num_b):
+    print("O número {} é maior que o número {}".format(num_a, num_b))
+    
+elif(num_b > num_a):
+    print("O número {} é maior que o número {}".format(num_b, num_a))
+    
+else:
+    print("Ambos números são iguais")
